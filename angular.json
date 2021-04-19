@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "group2Demo"
+    }
+  },
+  "defaultProject": "group2Demo",
+  "cli": {
+    "analytics": false
+  }
 }
