@@ -11,6 +11,13 @@ import { RightNavComponent } from './right-nav/right-nav.component';
 import { MainBodyComponent } from './main-body/main-body.component';
 import { AuthModule } from 'src/auth/auth.module';
 import { DataBindingComponent } from './data-binding/data-binding.component';
+import { EventBindingComponent } from './event-binding/event-binding.component';
+import { TemplateRefrenceVariableComponent } from './template-refrence-variable/template-refrence-variable.component';
+import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
+import { FormsModule } from '@angular/forms';
+import { StructuralDirectivesComponent } from './structural-directives/structural-directives.component';
+import { PipesComponent } from './pipes/pipes.component';
+import { SquarePipe } from './square.pipe';
 
 @NgModule({
   declarations: [
@@ -21,12 +28,19 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
     LeftNavComponent,
     RightNavComponent,
     MainBodyComponent,
-    DataBindingComponent
+    DataBindingComponent,
+    EventBindingComponent,
+    TemplateRefrenceVariableComponent,
+    TwoWayBindingComponent,
+    StructuralDirectivesComponent,
+    PipesComponent,
+    SquarePipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AuthModule
+    AuthModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

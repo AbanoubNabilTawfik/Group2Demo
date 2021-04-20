@@ -1,0 +1,47 @@
+<p>structural-directives works!</p>
+
+<!-- <h2 *ngIf="true">
+    Hello group 2
+</h2>
+
+<h2 *ngIf="showTxt">
+    Hello group 2 again
+</h2>
+
+<div *ngIf="isLoggedIn ; then thenBlock ;else elseBlock">
+
+</div>
+
+<h2 *ngIf="isLoggedIn else elseBlock">
+    Welcome {{name}}
+</h2>
+
+
+<ng-template #elseBlock>
+    <h2>
+        Welcome Guest
+    </h2>
+</ng-template>
+
+
+<ng-template #thenBlock >
+    <h2>
+        Welcome {{name}}
+    </h2>
+</ng-template> -->
+<!-- 
+<div [ngSwitch]="car">
+    <div *ngSwitchCase="'LOGAN'">YOU PICKED LOGAN CAR</div>
+    <div *ngSwitchCase="'KIA'">YOU PICKED KIA CAR</div>
+    <div *ngSwitchDefault>PICK NEW CAR</div>
+</div> -->
+
+<div *ngFor="let color of colors ; index as i; odd as o ; even as e ; first as f;  last as l">
+    <h2> {{i}} - {{color}} {{"is Odd ?" + o }}</h2>
+</div>
+<!-- 
+<div *ngFor="let std of students">
+{{std.name}}
+</div> -->
+
+
