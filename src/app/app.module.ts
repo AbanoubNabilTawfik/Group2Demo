@@ -18,7 +18,12 @@ import { FormsModule } from '@angular/forms';
 import { StructuralDirectivesComponent } from './structural-directives/structural-directives.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { SquarePipe } from './square.pipe';
-
+import { ChildComponent } from './child/child.component';
+import { ParentComponent } from './parent/parent.component';
+import { EmpListComponent } from './emp-list/emp-list.component';
+import { EmpDetailsComponent } from './emp-details/emp-details.component';
+import { EmployeeService } from './employee.service';
+import {HttpClientModule} from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,14 +38,19 @@ import { SquarePipe } from './square.pipe';
     TemplateRefrenceVariableComponent,
     TwoWayBindingComponent,
     StructuralDirectivesComponent,
-    PipesComponent,
-    SquarePipe
+    //PipesComponent,
+    SquarePipe,
+    ChildComponent,
+    ParentComponent,
+    EmpListComponent,
+    EmpDetailsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AuthModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
