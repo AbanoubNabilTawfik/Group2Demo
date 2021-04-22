@@ -9,7 +9,7 @@ export class ChildComponent implements OnInit {
 
   constructor() { }
   //@Input() parentData
-  //@Input('parentData') name;
+  @Input('parentData') name;
 
   testProp:string="Hello im testing prop";
 
